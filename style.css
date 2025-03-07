@@ -132,3 +132,21 @@ body {
   background:darkblue;
 }
 
+/*The Other Logo with css */
+.digitalocean {
+  width: 150px;
+  aspect-ratio: 1;
+  background:
+    repeating-conic-gradient(at 46% 46%,#0000 0 25%,#007cff 0 50%) 5% 94%/27.5% 27.5% no-repeat,
+    conic-gradient(#007cff 0 0) 38.5% 76.5%/19% 19% no-repeat,
+    radial-gradient(100% 100% at 0   0   ,#0000 60%,#007cff 61% 99%,#0000) 100% 100%/50% 50% no-repeat,
+    radial-gradient(50%  100% at 50% 100%,#0000 60%,#007cff 61% 99%,#0000) top/100% 50% no-repeat
+}
+
+
+body {
+    margin: 10;
+    margin-top: 300px;
+    height: 50px;
+}
+
