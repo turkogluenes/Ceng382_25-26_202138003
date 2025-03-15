@@ -32,3 +32,14 @@ document.getElementById("button1").addEventListener("click", function() {
     let container = document.getElementById("registerPart");
     container.style.display = (container.style.display === "none") ? "block" : "none";
 });
+
+let users = [];
+
+document.getElementById("submitButton").addEventListener("click", function() {
+    let nameSurname = document.getElementById("nameSurname").value;
+    let password = document.getElementById("password").value;
+
+    users.push({ nameSurname, password });
+    console.log(users);
+});
+
