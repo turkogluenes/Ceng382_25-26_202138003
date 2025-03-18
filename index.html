@@ -12,25 +12,34 @@
     <div class="freecodecamp"></div>
 
     <video id="backgroundLoop" autoplay loop muted>
-        <source src="background.mp4" type="video/mp4">
+        <source src="media/background.mp4" type="video/mp4">
     </video>
 
     <div id="clock"></div>
 
-    <button id="button1"></button>
     
     <div class="register" id="registerPart">
         <h2>Enter Your Name, Surname and Password</h2>
         <form id="registerForm">
-            <input type="text" id="nameSurname" placeholder="Name and Surname" required>
+            <input type="text" id="username" placeholder="Name and Surname" required>
             <input type="password" id="password" placeholder="Password" required>
             <button type="button" id="submitButton">Submit</button>
         </form>
     </div>
 
-    <div class="digitalocean"></div>
+     <!-- I took the logo from: https://codepen.io/josetxu/pen/xxaNzGj -->
+    <div class="content">
+        <input type="checkbox" id="play">
+        <label for="play">
+            <div class="letter-p"></div>
+            <div class="letter-l"></div>
+            <div class="letter-a"><span></span></div>
+            <div class="letter-y"></div>
+        </label>
+    </div>
 
     <script src="script.js"></script>
 
 </body>
 </html>
+

@@ -1,4 +1,7 @@
-#backgroundLoop{
+/* I took help from grok while editing this css file */
+
+
+#backgroundLoop {
   top: 0;
   left: 0;
   width: 100%;
@@ -8,34 +11,51 @@
   position: fixed;
 }
 
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0a22;
+  color: #ffffff;
+  overflow: hidden;
+}
+
 #clock {
   position: absolute;
   font-size: 100px;
-  margin-bottom: 37%;
   color: aliceblue;
-  left:37%;
   top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
-/* I took the logo from https://codepen.io/t_afif/pen/dyZvjqw */
+/* I took the first css art from https://codepen.io/t_afif/pen/dyZvjqw */
 .freecodecamp {
   width: 150px;
   aspect-ratio: 1;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
   background: 
-    radial-gradient(44% 83% at 48% 0,#0a0a22 91%,#fff) 59% 49%/5% 6% no-repeat,
+    radial-gradient(44% 83% at 48% 0, #0a0a22 91%, #fff) 59% 49%/5% 6% no-repeat,
     linear-gradient(#0a0a22 0 0) 49% 59%/5% 5% no-repeat,
-    radial-gradient(106% 121% at 0% 0%,#0000 97%,#0a0a22 ) 42.5% 49%/15% 15% no-repeat,
-    radial-gradient(50% 50% at -25% 50%,#0a0a22 90%,#0000 ) 56% 52%/9% 14% no-repeat,
-    radial-gradient(75% 80% at 100% 19%,#fff 88%,#0a0a22 ) 53.5% 59%/5% 7% no-repeat,
-    radial-gradient(85% 107% at 100% 111%,#0a0a22 94%,#0000 ) 43% 62%/7% 12% no-repeat,
-    radial-gradient(farthest-side,#0a0a22 90%,#0000 ) 58% 66%/4% 8% no-repeat,
-    radial-gradient(farthest-side,#0a0a22 98%,#0000 ) 50% 69%/18% 14% no-repeat,
-    radial-gradient(103% 120% at 0% 0%,#0000 98%,#fff 101%) 36% 34%/19% 24% no-repeat,      
-    radial-gradient(100% 50% at -27% 50%,#fff 97%,#0000) 65% 58%/7% 21% no-repeat,      
-    radial-gradient(101% 50% at -41% 50%,#fff 97%,#0000) 56% 41%/15% 35% no-repeat,      
-    radial-gradient(farthest-side,#fff 97%,#0000) 50% 63%/30% 27% no-repeat,      
+    radial-gradient(106% 121% at 0% 0%, #0000 97%, #0a0a22) 42.5% 49%/15% 15% no-repeat,
+    radial-gradient(50% 50% at -25% 50%, #0a0a22 90%, #0000) 56% 52%/9% 14% no-repeat,
+    radial-gradient(75% 80% at 100% 19%, #fff 88%, #0a0a22) 53.5% 59%/5% 7% no-repeat,
+    radial-gradient(85% 107% at 100% 111%, #0a0a22 94%, #0000) 43% 62%/7% 12% no-repeat,
+    radial-gradient(farthest-side, #0a0a22 90%, #0000) 58% 66%/4% 8% no-repeat,
+    radial-gradient(farthest-side, #0a0a22 98%, #0000) 50% 69%/18% 14% no-repeat,
+    radial-gradient(103% 120% at 0% 0%, #0000 98%, #fff 101%) 36% 34%/19% 24% no-repeat,      
+    radial-gradient(100% 50% at -27% 50%, #fff 97%, #0000) 65% 58%/7% 21% no-repeat,      
+    radial-gradient(101% 50% at -41% 50%, #fff 97%, #0000) 56% 41%/15% 35% no-repeat,      
+    radial-gradient(farthest-side, #fff 97%, #0000) 50% 63%/30% 27% no-repeat,      
     radial-gradient(#fff 5%, #0000 6%) border-box 0 0/50% 50%,
     #0a0a22;
 }
@@ -49,104 +69,204 @@
   border-radius: 50%;
 }
 
-body {
-margin: 0;
-height: 100vh;
-display: grid;
-place-content: center;
-}
-
-/* transparent button */
-#button1{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  height: 140px;
-  width: 140px;
-  left: 40rem;
-  background: transparent;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #252525;
-  color: #ffffff;
-}
-
-/* Entry Form */
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color:#0a0a22;
-  color:#ffffff;
-}
-
+/* Register form */
 .register {
   position: absolute;
-  bottom: 10%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: #1e1e1e;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
   text-align: center;
-  width: 300px;
+  width: 350px;
+  z-index: 2;
 }
 
 .register h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .register input {
   width: 90%;
-  padding: 10px;
+  padding: 12px;
   margin: 10px 0;
-  border: 1px solid #333;
+  border: 1px solid #444;
   border-radius: 5px;
   background: #2a2a2a;
   color: #ffffff;
+  font-size: 1em;
+  box-sizing: border-box;
+  display: block;
 }
 
 .register button {
-  width: 100%;
-  padding: 10px;
-  background:orange;
+  width: 90%;
+  padding: 12px;
+  background: orange;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: background 0.3s ease;
 }
 
 .register button:hover {
-  background:darkblue;
+  background: darkblue;
 }
 
-/*The Other Logo with css */
-.digitalocean {
-  width: 150px;
-  aspect-ratio: 1;
-  background:
-    repeating-conic-gradient(at 46% 46%,#0000 0 25%,#007cff 0 50%) 5% 94%/27.5% 27.5% no-repeat,
-    conic-gradient(#007cff 0 0) 38.5% 76.5%/19% 19% no-repeat,
-    radial-gradient(100% 100% at 0   0   ,#0000 60%,#007cff 61% 99%,#0000) 100% 100%/50% 50% no-repeat,
-    radial-gradient(50%  100% at 50% 100%,#0000 60%,#007cff 61% 99%,#0000) top/100% 50% no-repeat
+/* I took the second css art from: https://codepen.io/josetxu/pen/xxaNzGj */
+.content {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20vmin;
+  height: 8vmin;
+  background: #2b6ea1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5vmin;
+  box-shadow: 0 1px 0 1px #0002, 0 1vmin 0 0 #1f5176, 0 1.5vmin 0 0 #1f5176, 0 1.5vmin 0 1px #0004;
+  transition: all 0.5s ease 0s;
+  z-index: 1;
 }
 
-
-body {
-    margin: 10;
-    margin-top: 300px;
-    height: 50px;
+.content:hover {
+  transform: translateX(-50%) translateY(3px);
+  box-shadow: 0 1px 0 1px #0002, 0 calc(1vmin - 5px) 0 0 #2c4050, 0 calc(1.5vmin - 5px) 0 0 #2c4050;
 }
 
+.letter-p {
+  border-left: 0.8vmin solid #e6e6e6;
+  height: 4vmin;
+  border-radius: 0.4vmin;
+  position: relative;
+}
+
+.letter-p:before {
+  content: "";
+  border: 0.8vmin solid #e6e6e6;
+  border-color: #e6e6e6 #e6e6e6 #e6e6e6 #fff0;
+  width: 2vmin;
+  height: 1.5vmin;
+  margin-left: -0.8vmin;
+  position: absolute;
+  border-radius: 10% 50% 50% 0% / 10% 50% 50% 10%;
+}
+
+.letter-l {
+  border-left: 0.8vmin solid #e6e6e6;
+  border-bottom: 0.8vmin solid #e6e6e6;
+  height: 3.5vmin;
+  width: 2.5vmin;
+  margin-left: 4vmin;
+  margin-right: 1.5vmin;
+  border-radius: 0 0 0 0.3vmin;
+  position: relative;
+}
+
+.letter-a {
+  height: 4vmin;
+  width: 4vmin;
+  border-radius: 0.3vmin;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease 0s;
+}
+
+.letter-a:before, .letter-a:after {
+  content: "";
+  border-left: 0.8vmin solid #e6e6e6;
+  height: 5vmin;
+  border-radius: 0.3vmin;
+  position: absolute;
+  transform: rotate(25deg);
+  transform-origin: center 0.25vmin;
+}
+
+.letter-a:after {
+  transform: rotate(-25deg);
+}
+
+.letter-a span {
+  border-bottom: 0.8vmin solid #e6e6e6;
+  width: 3.5vmin;
+  position: absolute;
+  top: 1.5vmin;
+  border-radius: 0.3vmin;
+  transition: all 0.5s ease 0s;
+}
+
+.letter-y {
+  border-left: 0.8vmin solid #e6e6e6;
+  height: 1.5vmin;
+  margin-top: 2.5vmin;
+  margin-left: 2vmin;
+  border-radius: 0.3vmin;
+  position: relative;
+  transition: all 0.5s ease 0s;
+}
+
+.letter-y:before, .letter-y:after {
+  content: "";
+  border-left: 0.8vmin solid #e6e6e6;
+  height: 4vmin;
+  margin-top: 0.3vmin;
+  margin-left: -0.8vmin;
+  border-radius: 0.3vmin;
+  transform: rotate(155deg);
+  position: absolute;
+  transform-origin: center top;
+}
+
+.letter-y:after {
+  transform: rotate(205deg);
+}
+
+input { display: none; }
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+input:checked + label .letter-a,
+label:hover .letter-a {
+  transform: rotate(90deg);
+}
+
+input:checked + label .letter-a span,
+label:hover .letter-a span {
+  margin-top: 3vmin;
+  width: 4.85vmin;
+}
+
+input:checked + label .letter-p,
+input:checked + label .letter-l,
+input:checked + label .letter-y {
+  opacity: 0.15;
+}
+
+input:checked + label {
+  background: #03A9F4cc;
+  box-shadow: 0 0 5vmin 1vmin #009be1;
+}

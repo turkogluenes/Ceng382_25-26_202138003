@@ -10,7 +10,7 @@ updateClock();
 
 document.addEventListener("DOMContentLoaded", function () {
     let video = document.getElementById("backgroundLoop");
-    let button = document.getElementById("button1");
+    let button = document.getElementById("play");
 
     button.addEventListener("click", function () {
         if (video.paused) {
@@ -28,7 +28,7 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-document.getElementById("button1").addEventListener("click", function() {
+document.getElementById("play").addEventListener("click", function() {
     let container = document.getElementById("registerPart");
     container.style.display = (container.style.display === "none") ? "block" : "none";
 });
@@ -36,10 +36,29 @@ document.getElementById("button1").addEventListener("click", function() {
 let users = [];
 
 document.getElementById("submitButton").addEventListener("click", function() {
-    let nameSurname = document.getElementById("nameSurname").value;
+    let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    users.push({ nameSurname, password });
+    users.push({ username, password });
     console.log(users);
 });
+
+// I took these lines from ChatGPT
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("submitButton").addEventListener("click", function () {
+
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        
+        const defaultUsername = "admin";
+        const defaultPassword = "admin";
+        
+        if (username === defaultUsername && password === defaultPassword) {
+            window.location.href = "table.html";
+        } else {
+            alert("Invalid username or password. Please try again.");
+        }
+    });
+});
+
 
