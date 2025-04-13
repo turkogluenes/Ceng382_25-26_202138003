@@ -1,16 +1,10 @@
-//I took help from ChatGPT in this file
-using System.ComponentModel.DataAnnotations;
-
-namespace labworkWeek5.Models {
-    public class ClassInformationModel {
+namespace labworkWeek5.Models
+{
+    public class ClassInformationTable
+    {
         public int Id { get; set; }
-
-        [Required]
-        public string ClassName { get; set; }
-
-        [Required]
+        public string ClassName { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
         public int StudentCount { get; set; }
-
-        public string Description { get; set; }
     }
 }
