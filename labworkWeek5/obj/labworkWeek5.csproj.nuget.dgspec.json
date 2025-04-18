@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/enesturkoglu/Desktop/CENG-382 Lab Works/Ceng382_25-26_202138003/labworkWeek5/labworkWeek5.csproj": {}
+    "/Users/enesturkoglu/Desktop/Dersler/CENG-382 Lab Works/Ceng382_25-26_202138003/labworkWeek5/labworkWeek5.csproj": {}
   },
   "projects": {
-    "/Users/enesturkoglu/Desktop/CENG-382 Lab Works/Ceng382_25-26_202138003/labworkWeek5/labworkWeek5.csproj": {
+    "/Users/enesturkoglu/Desktop/Dersler/CENG-382 Lab Works/Ceng382_25-26_202138003/labworkWeek5/labworkWeek5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/enesturkoglu/Desktop/CENG-382 Lab Works/Ceng382_25-26_202138003/labworkWeek5/labworkWeek5.csproj",
+        "projectUniqueName": "/Users/enesturkoglu/Desktop/Dersler/CENG-382 Lab Works/Ceng382_25-26_202138003/labworkWeek5/labworkWeek5.csproj",
         "projectName": "labworkWeek5",
-        "projectPath": "/Users/enesturkoglu/Desktop/CENG-382 Lab Works/Ceng382_25-26_202138003/labworkWeek5/labworkWeek5.csproj",
+        "projectPath": "/Users/enesturkoglu/Desktop/Dersler/CENG-382 Lab Works/Ceng382_25-26_202138003/labworkWeek5/labworkWeek5.csproj",
         "packagesPath": "/Users/enesturkoglu/.nuget/packages/",
-        "outputPath": "/Users/enesturkoglu/Desktop/CENG-382 Lab Works/Ceng382_25-26_202138003/labworkWeek5/obj/",
+        "outputPath": "/Users/enesturkoglu/Desktop/Dersler/CENG-382 Lab Works/Ceng382_25-26_202138003/labworkWeek5/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/enesturkoglu/.nuget/NuGet/NuGet.Config"
